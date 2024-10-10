@@ -39,6 +39,22 @@ const { page } = Astro.props;
     }
   </div>
   {(page.url.next || page.url.prev) && <Pagination page={page} />}
+   <!-- Sección Explicativa sobre Astropod -->
+  <section class="mt-8 p-4 bg-base-100 shadow-md rounded-md">
+    <h2 class="text-2xl font-bold mb-4">¿Qué es Astropod?</h2>
+    <p class="mb-2">
+      Astropod es una solución gratuita y de código abierto para la creación y alojamiento de podcasts de manera autosuficiente. Es un proyecto diseñado para ofrecer una plataforma sin servidores, lo que significa que puedes gestionar tu propio podcast sin depender de servicios de terceros.
+    </p>
+    <p class="mb-2">
+      Con Astropod, puedes subir episodios, organizar tus contenidos, y compartir tu podcast con el mundo de forma sencilla y eficiente. Todo esto con la flexibilidad que te proporciona ser el propietario de tus propios datos y sin comisiones por el servicio.
+    </p>
+    <p class="mb-2">
+      Este servicio ha sido construido utilizando Astro, un moderno framework estático, lo que permite un rendimiento optimizado y una experiencia de usuario rápida y fluida.
+    </p>
+    <p class="mb-2">
+      Si quieres saber más, visita el <a href="https://getastropod.netlify.app/" target="_blank" class="underline text-blue-500">sitio oficial de Astropod</a>.
+    </p>
+  </section>
 </BaseLayout>
 
 <AudioPlayer />
