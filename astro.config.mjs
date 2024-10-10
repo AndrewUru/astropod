@@ -31,8 +31,8 @@ export default defineConfig({
       cacheDir: "./.cache/image",
       logLevel: "debug",
     }),
-    NetlifyCMS({
-      config: dcapConfig(),
-    }),
+    // NetlifyCMS({
+    //   config: dcapConfig(),
+    // }),
   ],
 });
