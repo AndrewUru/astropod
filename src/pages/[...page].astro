@@ -40,21 +40,44 @@ const { page } = Astro.props;
   </div>
   {(page.url.next || page.url.prev) && <Pagination page={page} />}
    <!-- Sección Explicativa sobre Astropod -->
-  <section class="mt-8 p-4 bg-base-100 shadow-md rounded-md">
-    <h2 class="text-2xl font-bold mb-4">¿Qué es Astropod?</h2>
-    <p class="mb-2">
-      Astropod es una solución gratuita y de código abierto para la creación y alojamiento de podcasts de manera autosuficiente. Es un proyecto diseñado para ofrecer una plataforma sin servidores, lo que significa que puedes gestionar tu propio podcast sin depender de servicios de terceros.
-    </p>
-    <p class="mb-2">
-      Con Astropod, puedes subir episodios, organizar tus contenidos, y compartir tu podcast con el mundo de forma sencilla y eficiente. Todo esto con la flexibilidad que te proporciona ser el propietario de tus propios datos y sin comisiones por el servicio.
-    </p>
-    <p class="mb-2">
-      Este servicio ha sido construido utilizando Astro, un moderno framework estático, lo que permite un rendimiento optimizado y una experiencia de usuario rápida y fluida.
-    </p>
-    <p class="mb-2">
-      Si quieres saber más, visita el <a href="https://getastropod.netlify.app/" target="_blank" class="underline text-blue-500">sitio oficial de Astropod</a>.
-    </p>
-  </section>
+<section class="mt-8 p-4 bg-base-100 shadow-md rounded-md">
+  <h2 class="text-3xl font-bold mb-6 text-center">¿Qué es Astropod?</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Tarjeta 1: Solución de código abierto -->
+    <div class=" p-4 rounded-lg shadow-lg">
+      <h3 class="text-xl font-semibold mb-2">Código Abierto</h3>
+      <p>
+        Astropod es una plataforma gratuita y de código abierto para la creación y alojamiento de podcasts. Gestiona tus podcasts sin depender de servicios de terceros.
+      </p>
+    </div>
+
+    <!-- Tarjeta 2: Control total de tus datos -->
+    <div class="p-4 rounded-lg shadow-lg">
+      <h3 class="text-xl font-semibold mb-2">Control Total</h3>
+      <p>
+        Con Astropod, eres el dueño de tus propios datos. Sube y organiza tus episodios fácilmente, sin intermediarios ni comisiones por el servicio.
+      </p>
+    </div>
+
+    <!-- Tarjeta 3: Basado en Astro -->
+    <div class=" p-4 rounded-lg shadow-lg">
+      <h3 class="text-xl font-semibold mb-2">Tecnología Astro</h3>
+      <p>
+        Astropod está construido con Astro, un framework estático que garantiza un rendimiento optimizado y una experiencia fluida tanto para los creadores como para los oyentes.
+      </p>
+    </div>
+
+    <!-- Tarjeta 4: Plataforma desde 3,99€ al mes -->
+    <div class=" p-4 rounded-lg shadow-lg">
+      <h3 class="text-xl font-semibold mb-2">Tu Podcast desde 3,99€/mes</h3>
+      <p>
+        ¿Quieres tu propia plataforma de podcasts? Con Astropod, puedes tenerla desde solo 3,99 euros al mes. ¡Empieza a crear y compartir tus episodios hoy mismo!
+      </p>
+    </div>
+  </div>
+</section>
+
 </BaseLayout>
 
 <AudioPlayer />

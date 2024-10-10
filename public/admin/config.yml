@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main # O el nombre de la rama que usas
+
+media_folder: "public/audio" # Carpeta donde se subirán los archivos de audio
+public_folder: "/audio" # URL pública de los archivos
+
+collections:
+  - name: "podcasts"
+    label: "Podcasts"
+    folder: "src/content/episode"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - {
+          label: "URL del audio",
+          name: "audioUrl",
+          widget: "file",
+          media_library: { config: { multiple: false } },
+        }
+      - { label: "Fecha de publicación", name: "pubDate", widget: "datetime" }
+      - { label: "Duración", name: "duration", widget: "string" }
+      - { label: "Portada", name: "cover", widget: "image" }
+      - { label: "Explicito", name: "explicit", widget: "boolean" }
+      - { label: "Número de episodio", name: "episode", widget: "number" }
+      - { label: "Temporada", name: "season", widget: "number" }
+      - {
+          label: "Tipo de episodio",
+          name: "episodeType",
+          widget: "string",
+          default: "full",
+        }
