@@ -38,7 +38,9 @@ const { page } = Astro.props;
       ))
     }
   </div>
-  {(page.url.next || page.url.prev) && <Pagination page={page} />}
+  {page.next || page.prev ? (
+  <Pagination page={page} />
+) : null}
    <!-- Sección Explicativa sobre Astropod -->
 <section class="mt-8 p-4 bg-base-100 shadow-md rounded-md">
   <h2 class="text-3xl font-bold mb-6 text-center">¿Qué es Astropod?</h2>
