@@ -1,14 +1,13 @@
 ---
-title: primer-POSCAST.ogg
+title: Primer capitulo subido desde mi propio servidor
 audioUrl: https://elsaltoweb.es/wp-content/uploads/2024/10/primer-POSCAST.ogg
 pubDate: Oct 15 2022
 duration: 07:45
-fileSize: "111"
+size: 011
 explicit: false
 episode: 1
 season: 1
 episodeType: full
-size: "111"
 ---
 
 En este episodio, discutimos los beneficios que los podcasts pueden ofrecer a los creadores de contenido. Desde la creación de una conexión más cercana con la audiencia hasta la posibilidad de generar ingresos a través de patrocinios y publicidad, los podcasts son una herramienta poderosa para cualquier creador de contenido.
