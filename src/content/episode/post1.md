@@ -1,6 +1,6 @@
 ---
 title: Los Beneficios de los Podcasts para Creadores de Contenido
-audioUrl: https://drive.google.com/file/d/1ln2v6uxucOEnt75zB_M4-c87AQm9rGye/view?usp=drive_link
+audioUrl: https://drive.google.com/uc?export=download&id=1In2v6uxu0CEn7r5zB_M4-c87AOm9rGye
 
 pubDate: Oct 15 2022
 duration: 07:45
