@@ -11,5 +11,40 @@ import { marked } from "marked";
 import Pagination from "../components/pagination.astro";
 ---
 
-<EpisodeLayout title="Te ayudamos a tener tu propia PLATAFORMA " description={astropodConfig.description} cover={astropodConfig.cover}>
-  {astropodConfig.description}
+<EpisodeLayout title="Te ayudamos a tener tu propia PLATAFORMA" description={astropodConfig.description} cover={astropodConfig.cover}>
+  <section class="store-section py-12">
+    <div class="container mx-auto px-4">
+     
+      <!-- Listado de productos de la tienda -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+    
+      <!-- Reproductor de audio -->
+      <div class="mt-16">
+        <AudioPlayer .data.audioUrl />
+      </div>
+
+
+
+
+<!-- Estilos adicionales -->
+<style>
+  .store-section {
+    background-color: var(--astro-colors-base-200);
+    padding: 2rem 0;
+  }
+
+  .grid {
+    display: grid;
+    gap: 2rem;
+  }
+
+  /* Para ajustar la apariencia de las tarjetas horizontales */
+  .horizontal-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--astro-colors-base-100);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+</style>
