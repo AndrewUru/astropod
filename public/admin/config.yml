@@ -4,6 +4,8 @@ backend:
 
 media_folder: "public/audio" # Carpeta donde se subirán los archivos de audio
 public_folder: "/audio" # URL pública de los archivos
+login:
+  redirect_url: "/admin" # O la ruta que quieras para el CMS después de iniciar sesión
 
 collections:
   - name: "podcasts"
