@@ -3,7 +3,7 @@ import EpisodeLayout from "../layouts/EpisodeLayout.astro";
 import astropodConfig from "../../.astropod/astropod.config.json";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-import astropodConfig from "../../.astropod/astropod.config.json";
+
 import HeaderCard from "../components/headerCard/HeaderCard.astro";
 import AudioPlayer from "../components/audioPlayer.astro";
 import PlainTextRenderer from "marked-plaintext";
@@ -14,20 +14,47 @@ import Pagination from "../components/pagination.astro";
 <EpisodeLayout title="About" description={astropodConfig.description} cover={astropodConfig.cover}>
   {astropodConfig.description}
 
-  <section class="episode-layout">
+<section class="store-layout">
   <!-- Hero section con imagen de portada grande -->
-  <div class="hero-section bg-cover bg-center" >
-    <div class="overlay bg-black bg-opacity-60 p-8 flex flex-col justify-center items-center text-center">
-      <h1 class="text-white text-6xl font-bold mb-4"></h1>
-      <p class="text-white text-lg max-w-3xl">STORE</p>
+  <div class="hero-section bg-cover bg-center" style="background-image: url('/images/hero-audio-store.jpg')">
+    <div class="overlay bg-black bg-opacity-70 p-12 flex flex-col justify-center items-center text-center">
+      <h1 class="text-white text-6xl font-bold mb-6">Tienda de Audios</h1>
+      <p class="text-white text-lg max-w-3xl mb-8">Explora una colección de audios exclusivos para mejorar tu bienestar y productividad. Elige entre una variedad de audios diseñados especialmente para ti.</p>
+      <a href="#store" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-500">Explorar Audios</a>
     </div>
   </div>
 
+  <!-- Sección de audios destacados -->
+  <div id="store" class="audio-section py-16 bg-gray-900 px-8 text-center">
+    <h2 class="text-white text-4xl font-semibold mb-12">Audios Destacados</h2>
+    <div class="audio-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="audio-card bg-gray-800 rounded-lg p-6 shadow-lg">
+        <img class="mb-4 w-full h-48 object-cover rounded" src="/images/audio1-cover.jpg" alt="Audio 1">
+        <h3 class="text-white text-xl font-semibold mb-2">Audio de Relajación</h3>
+        <p class="text-gray-400 text-sm mb-4">Descubre la calma con este audio relajante perfecto para desconectar y liberar tensiones.</p>
+        <p class="text-white font-bold text-lg mb-4">$4.99</p>
+        <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-500">Comprar</a>
+      </div>
+      <div class="audio-card bg-gray-800 rounded-lg p-6 shadow-lg">
+        <img class="mb-4 w-full h-48 object-cover rounded" src="/images/audio2-cover.jpg" alt="Audio 2">
+        <h3 class="text-white text-xl font-semibold mb-2">Audio de Meditación</h3>
+        <p class="text-gray-400 text-sm mb-4">Guía de meditación para principiantes y expertos, diseñada para ayudarte a conectar contigo mismo.</p>
+        <p class="text-white font-bold text-lg mb-4">$3.99</p>
+        <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-500">Comprar</a>
+      </div>
+      <div class="audio-card bg-gray-800 rounded-lg p-6 shadow-lg">
+        <img class="mb-4 w-full h-48 object-cover rounded" src="/images/audio3-cover.jpg" alt="Audio 3">
+        <h3 class="text-white text-xl font-semibold mb-2">Audio Motivacional</h3>
+        <p class="text-gray-400 text-sm mb-4">Este audio motivacional te llenará de energía para enfrentar cualquier reto de tu día a día.</p>
+        <p class="text-white font-bold text-lg mb-4">$5.99</p>
+        <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-500">Comprar</a>
+      </div>
+    </div>
+  </div>
 
-
-  <!-- Sección de categorías o enlaces relacionados -->
+  <!-- Sección de enlaces a plataformas relacionadas -->
   <div class="related-section bg-gray-700 py-12 px-8 text-center">
-    <h2 class="text-white text-3xl mb-4">Explore More</h2>
+    <h2 class="text-white text-3xl mb-6">Escucha más en otras plataformas</h2>
     <div class="related-links space-x-4">
       <a href="#" class="text-gray-300 hover:text-white">Spotify</a>
       <a href="#" class="text-gray-300 hover:text-white">Apple Podcasts</a>
@@ -35,4 +62,32 @@ import Pagination from "../components/pagination.astro";
     </div>
   </div>
 </section>
+
+<!-- CSS personalizado -->
+<style>
+  .hero-section {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .audio-list {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .audio-card {
+    transition: transform 0.3s ease;
+  }
+
+  .audio-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .related-links a {
+    margin: 0 15px;
+    font-size: 1.25rem;
+  }
+</style>
+
 </EpisodeLayout>
