@@ -1,0 +1,15 @@
+---
+import EpisodeLayout from "../layouts/EpisodeLayout.astro";
+import astropodConfig from "../../.astropod/astropod.config.json";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+
+import HeaderCard from "../components/headerCard/HeaderCard.astro";
+import AudioPlayer from "../components/audioPlayer.astro";
+import PlainTextRenderer from "marked-plaintext";
+import { marked } from "marked";
+import Pagination from "../components/pagination.astro";
+---
+
+<EpisodeLayout title="Te ayudamos a tener tu propia PLATAFORMA " description={astropodConfig.description} cover={astropodConfig.cover}>
+  {astropodConfig.description}

@@ -11,64 +11,79 @@ import { marked } from "marked";
 import Pagination from "../components/pagination.astro";
 ---
 
-<EpisodeLayout title="About" description={astropodConfig.description} cover={astropodConfig.cover}>
+<EpisodeLayout title="¿Cómo funciona?" description={astropodConfig.description} cover={astropodConfig.cover}>
   {astropodConfig.description}
 
-<section class="store-layout">
-  <!-- Hero section con imagen de portada grande -->
-  <div class="hero-section bg-cover bg-center" style="background-image: url('/images/hero-audio-store.jpg')">
-    <div class="overlay bg-black bg-opacity-70 p-12 flex flex-col justify-center items-center text-center">
-      <h1 class="text-white text-6xl font-bold mb-6">Tienda de Audios</h1>
-      <p class="text-white text-lg max-w-3xl mb-8">Explora una colección de audios exclusivos para mejorar tu bienestar y productividad. Elige entre una variedad de audios diseñados especialmente para ti.</p>
-      <a href="#store" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-500">Explorar Audios</a>
-    </div>
+<section class="episode-layout">
+<!-- Hero section con imagen de portada grande -->
+<div class="hero-section" style="background-image: url('https://elsaltoweb.es/wp-content/uploads/2024/05/andres.jpg'); ">
+  <div class="overlay bg-black bg-opacity-60 p-8 flex flex-col justify-center items-center text-center">
+    <h1 class="text-gradient text-4xl md:text-6xl font-bold mb-4">Servicio de Podcast</h1>
+    <p class="text-gray-300 text-base md:text-lg max-w-xl mb-6">Nuestro servicio de podcast puede ayudarte a crecer, monetizar y conectar con tu audiencia. ¡Escucha nuestros audios para saber más!</p>
+    <a href="#store" class="bg-primary-600 text-white px-6 py-3 rounded-md shadow-lg hover:bg-primary-500">Escuchar Audios</a>
   </div>
-
+</div>
   <!-- Sección de audios destacados -->
-  <div id="store" class="audio-section py-16 bg-gray-900 px-8 text-center">
-    <h2 class="text-white text-4xl font-semibold mb-12">Audios Destacados</h2>
+  <div id="store" class="audio-section py-16 bg-base-200 px-8 text-center">
+    <h2 class="text-white text-4xl font-semibold mb-12">Audios sobre los Beneficios del Podcast</h2>
     <div class="audio-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="audio-card bg-gray-800 rounded-lg p-6 shadow-lg">
-        <img class="mb-4 w-full h-48 object-cover rounded" src="/images/audio1-cover.jpg" alt="Audio 1">
-        <h3 class="text-white text-xl font-semibold mb-2">Audio de Relajación</h3>
-        <p class="text-gray-400 text-sm mb-4">Descubre la calma con este audio relajante perfecto para desconectar y liberar tensiones.</p>
-        <p class="text-white font-bold text-lg mb-4">$4.99</p>
-        <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-500">Comprar</a>
+      <div class="audio-card bg-base-100 rounded-lg p-6 shadow-md">
+        <img class="mb-4 w-full h-48 object-cover rounded" src="https://elsaltoweb.es/wp-content/uploads/2024/08/gestion-de-redes-sociales.jpg" alt="Monetización de Podcast">
+        <h3 class="text-white text-xl font-semibold mb-2">Cómo Monetizar tu Podcast</h3>
+        <p class="text-gray-400 text-sm mb-4">Aprende las estrategias clave para monetizar tu podcast y generar ingresos de manera efectiva.</p>
+        <p class="text-white font-bold text-lg mb-4">Escuchar Gratis</p>
+        <a href="#" class="bg-primary-600 text-white px-4 py-2 rounded-md shadow hover:bg-primary-500">Escuchar</a>
       </div>
-      <div class="audio-card bg-gray-800 rounded-lg p-6 shadow-lg">
-        <img class="mb-4 w-full h-48 object-cover rounded" src="/images/audio2-cover.jpg" alt="Audio 2">
-        <h3 class="text-white text-xl font-semibold mb-2">Audio de Meditación</h3>
-        <p class="text-gray-400 text-sm mb-4">Guía de meditación para principiantes y expertos, diseñada para ayudarte a conectar contigo mismo.</p>
-        <p class="text-white font-bold text-lg mb-4">$3.99</p>
-        <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-500">Comprar</a>
+      <div class="audio-card bg-base-100 rounded-lg p-6 shadow-md">
+        <img class="mb-4 w-full h-48 object-cover rounded" src="/images/comunidad.jpg" alt="Crear una Comunidad">
+        <h3 class="text-white text-xl font-semibold mb-2">Construir una Comunidad a través de tu Podcast</h3>
+        <p class="text-gray-400 text-sm mb-4">Descubre cómo conectar con tu audiencia y crear una comunidad sólida que apoye tu contenido.</p>
+        <p class="text-white font-bold text-lg mb-4">Escuchar Gratis</p>
+        <a href="#" class="bg-primary-600 text-white px-4 py-2 rounded-md shadow hover:bg-primary-500">Escuchar</a>
       </div>
-      <div class="audio-card bg-gray-800 rounded-lg p-6 shadow-lg">
-        <img class="mb-4 w-full h-48 object-cover rounded" src="/images/audio3-cover.jpg" alt="Audio 3">
-        <h3 class="text-white text-xl font-semibold mb-2">Audio Motivacional</h3>
-        <p class="text-gray-400 text-sm mb-4">Este audio motivacional te llenará de energía para enfrentar cualquier reto de tu día a día.</p>
-        <p class="text-white font-bold text-lg mb-4">$5.99</p>
-        <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-500">Comprar</a>
+      <div class="audio-card bg-base-100 rounded-lg p-6 shadow-md">
+        <img class="mb-4 w-full h-48 object-cover rounded" src="/images/seo-podcast.jpg" alt="SEO para Podcasts">
+        <h3 class="text-white text-xl font-semibold mb-2">Optimización SEO para tu Podcast</h3>
+        <p class="text-gray-400 text-sm mb-4">Conoce las mejores prácticas para mejorar la visibilidad de tu podcast en motores de búsqueda y plataformas.</p>
+        <p class="text-white font-bold text-lg mb-4">Escuchar Gratis</p>
+        <a href="#" class="bg-primary-600 text-white px-4 py-2 rounded-md shadow hover:bg-primary-500">Escuchar</a>
       </div>
     </div>
   </div>
 
   <!-- Sección de enlaces a plataformas relacionadas -->
-  <div class="related-section bg-gray-700 py-12 px-8 text-center">
-    <h2 class="text-white text-3xl mb-6">Escucha más en otras plataformas</h2>
+  <div class="related-section bg-base-300 py-12 px-8 text-center">
+    <h2 class="text-white text-3xl mb-6">Descubre más recursos sobre Podcast</h2>
     <div class="related-links space-x-4">
-      <a href="#" class="text-gray-300 hover:text-white">Spotify</a>
-      <a href="#" class="text-gray-300 hover:text-white">Apple Podcasts</a>
-      <a href="#" class="text-gray-300 hover:text-white">Google Podcasts</a>
+      <a href="#" class="text-gray-300 hover:text-white">Artículos</a>
+      <a href="#" class="text-gray-300 hover:text-white">Guías</a>
+      <a href="#" class="text-gray-300 hover:text-white">Videos</a>
     </div>
   </div>
 </section>
 
 <!-- CSS personalizado -->
 <style>
-  .hero-section {
-    height: 500px;
+.hero-section {
+   
     background-size: cover;
-    background-position: center;
+    background-position: center ; /* Ajusta la imagen hacia arriba */
+    background-repeat: no-repeat;
+    }
+
+
+  /* Gradiente de color para los textos */
+  .text-gradient {
+    background: linear-gradient(90deg, #8d12b3, #dddad7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  @media (min-width: 1024px) {
+    .text-gradient {
+      font-size: 5rem; /* Ajuste del tamaño del texto en pantallas grandes */
+    }
   }
 
   .audio-list {
@@ -89,5 +104,6 @@ import Pagination from "../components/pagination.astro";
     font-size: 1.25rem;
   }
 </style>
+
 
 </EpisodeLayout>
