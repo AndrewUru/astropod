@@ -1,6 +1,6 @@
 ---
 title: T1-episodio2 desde google drive
-audioUrl: https://drive.google.com/uc?export=download&id=1ln2v6uxucOEnt75zB_M4-c87AQm9rGye
+audioUrl: https://elsaltoweb.es/wp-content/uploads/2024/10/T1-episodio1.m4a
 
 pubDate: Oct 18 2022
 duration: 09:20
