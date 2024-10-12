@@ -5,7 +5,7 @@ audioUrl: https://drive.google.com/uc?export=download&id=1ln2v6uxucOEnt75zB_M4-c
 pubDate: Oct 18 2022
 duration: 09:20
 size: 011
-cover: ""
+cover: "https://elsaltoweb.es/wp-content/uploads/2024/09/headles-cms-wordpress-e1726513847707.webp"
 explicit: false
 episode: 2
 season: 1

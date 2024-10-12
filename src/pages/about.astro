@@ -1,8 +1,38 @@
 ---
 import EpisodeLayout from "../layouts/EpisodeLayout.astro";
 import astropodConfig from "../../.astropod/astropod.config.json";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import astropodConfig from "../../.astropod/astropod.config.json";
+import HeaderCard from "../components/headerCard/HeaderCard.astro";
+import AudioPlayer from "../components/audioPlayer.astro";
+import PlainTextRenderer from "marked-plaintext";
+import { marked } from "marked";
+import Pagination from "../components/pagination.astro";
 ---
 
 <EpisodeLayout title="About" description={astropodConfig.description} cover={astropodConfig.cover}>
   {astropodConfig.description}
+
+  <section class="episode-layout">
+  <!-- Hero section con imagen de portada grande -->
+  <div class="hero-section bg-cover bg-center" >
+    <div class="overlay bg-black bg-opacity-60 p-8 flex flex-col justify-center items-center text-center">
+      <h1 class="text-white text-6xl font-bold mb-4"></h1>
+      <p class="text-white text-lg max-w-3xl">{description}</p>
+    </div>
+  </div>
+
+
+
+  <!-- Sección de categorías o enlaces relacionados -->
+  <div class="related-section bg-gray-700 py-12 px-8 text-center">
+    <h2 class="text-white text-3xl mb-4">Explore More</h2>
+    <div class="related-links space-x-4">
+      <a href="#" class="text-gray-300 hover:text-white">Spotify</a>
+      <a href="#" class="text-gray-300 hover:text-white">Apple Podcasts</a>
+      <a href="#" class="text-gray-300 hover:text-white">Google Podcasts</a>
+    </div>
+  </div>
+</section>
 </EpisodeLayout>
