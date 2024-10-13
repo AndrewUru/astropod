@@ -1,10 +1,11 @@
 ---
+size: 11
 title: Primer capitulo subido desde mi propio servidor
+description: Capítulo intentando subirncapitulos desde CMS
 audioUrl: https://elsaltoweb.es/wp-content/uploads/2024/10/primer-POSCAST.ogg
 pubDate: Oct 15 2022
-duration: 07:45
-size: 011
-cover: "https://elsaltoweb.es/wp-content/uploads/2024/05/Captura-slider-responsivo.jpg"
+duration: "121"
+cover: https://elsaltoweb.es/wp-content/uploads/2024/05/Captura-slider-responsivo.jpg
 explicit: false
 episode: 1
 season: 1
