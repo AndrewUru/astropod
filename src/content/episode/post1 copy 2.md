@@ -6,7 +6,7 @@ audioUrl: https://elsaltoweb.es/wp-content/uploads/2024/10/primer-POSCAST.ogg
 pubDate: Oct 15 2022
 duration: "121"
 cover: https://elsaltoweb.es/wp-content/uploads/2024/05/Captura-slider-responsivo.jpg
-explicit: false
+explicit: true
 episode: 1
 season: 1
 episodeType: full
