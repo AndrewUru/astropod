@@ -7,6 +7,7 @@ pubDate: 2024-10-13T13:48:00.000Z
 duration: "13"
 cover: /audio/podcast.jpeg
 explicit: true
+size: 235
 episode: 3
 season: 1
 episodeType: full
