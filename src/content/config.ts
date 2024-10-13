@@ -5,6 +5,7 @@ const episodeSchema = z.object({
   audioUrl: z.string(),
   pubDate: z.coerce.date().optional(),
   cover: z.string().optional(),
+  description: z.string().optional(),
   explicit: z.boolean().optional(),
   episode: z.number().optional(),
   season: z.number().optional(),
