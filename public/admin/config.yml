@@ -1,5 +1,6 @@
 backend:
   name: github
+  repo: AndrewUru/astropod
   branch: main # O el nombre de la rama que usas
 
 media_folder: "public/audio" # Carpeta donde se subirán los archivos de audio
