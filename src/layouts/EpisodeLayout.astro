@@ -8,6 +8,7 @@ import astropodConfig from "../../.astropod/astropod.config.json";
 const { title, explicit, pubDate, cover, description } = Astro.props;
 dayjs.extend(localizedFormat);
 const displayDate = dayjs(pubDate).format("ll");
+const descriptionText = description || "Descripción no disponible"; // Valor por defecto si no hay descripción
 ---
 
 <BaseLayout title={`${title} - ${astropodConfig.name}`} description={description} image={cover}>
