@@ -7,7 +7,7 @@ export default function dcapconfig() {
   const config = {
     logo_url: "/cmsBanner.svg",
     backend: {
-      name: "github",
+      name: "git-gateway",
       repo: "AndrewUru/astropod",
       branch: "main",
     },

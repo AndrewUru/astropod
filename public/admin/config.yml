@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: AndrewUru/astropod
   branch: main # O el nombre de la rama que usas
 
