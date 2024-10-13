@@ -25,9 +25,8 @@ collections:
         }
       - { label: "Fecha de publicación", name: "pubDate", widget: "datetime" }
       - { label: "Duración", name: "duration", widget: "string" }
-      - { label: "Tamaño del archivo (MB)", name: "size", widget: "number" } # Añade este campo
+
       - { label: "Portada", name: "cover", widget: "image" }
-      - { label: "Explicito", name: "explicit", widget: "boolean" }
       - { label: "Número de episodio", name: "episode", widget: "number" }
       - { label: "Temporada", name: "season", widget: "number" }
       - {
