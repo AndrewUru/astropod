@@ -6,7 +6,7 @@ const episodeSchema = z.object({
   pubDate: z.coerce.date().optional(),
   cover: z.string().optional(),
   description: z.string().optional(),
-  explicit: z.boolean().optional(),
+  explicit: z.boolean(),
   episode: z.number().optional(),
   season: z.number().optional(),
   episodeType: z.string().optional(),
